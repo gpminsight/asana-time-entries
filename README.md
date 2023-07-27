@@ -29,17 +29,17 @@ pip install asana requests
 
 python3 asana_time_tracking.py
 
-4. Check the output: The script creates a CSV file named `time_tracking_entries.csv` in the same directory, which contains the extracted time tracking data.
+4. Check the output: The script creates a CSV file named `report.csv` in the same directory, which contains the extracted time tracking data.
 
 ## Output
 
 The CSV file has the following columns:
-- `gid`: The gid of the task
-- `resource_type`: The type of the resource
-- `duration_minutes`: The duration of the task in minutes
-- `created_by`: The name of the user who created the task
-- `entered_on`: The date the task was entered
-
-## Note
-
-This script only extracts the 'name' field from the 'created_by' dictionary in the Asana API response. Modify the script if you need to extract more fields.
+- `time entry id`: The gid of the time entry
+- `employee gid`: The Asana id of the user who created the task
+- `employee name`: The name of the user who created the task
+- `entered on`: The date the task was entered
+- `project name`: The name of the project
+- `project gid`: The project id
+- `actual time minutes`: Logged time in minutes
+- `company`: Taken from the Asana Team the project sits in
+- `ns job id`: Taken from the Asana project description (notes in the API) field
