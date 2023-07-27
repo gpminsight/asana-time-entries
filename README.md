@@ -23,13 +23,11 @@ pip install asana requests
 
 1. Set up your Asana Personal Access Token: The script uses Asana's Personal Access Token for authentication. Replace the `PERSONAL_ACCESS_TOKEN` variable in the script with your own Personal Access Token.
 
-2. Add your project GIDs: The script extracts data from multiple projects. Add your project GIDs to the `project_gids` list in the script.
-
-3. Run the script: Use Python 3 to run the script:
+2. Run the script: Use Python 3 to run the script:
 
 python3 asana_time_tracking.py
 
-4. Check the output: The script creates a CSV file named `report.csv` in the same directory, which contains the extracted time tracking data.
+3. Check the output: The script creates a CSV file named `report.csv` in the same directory, which contains the extracted time tracking data.
 
 ## Output
 
